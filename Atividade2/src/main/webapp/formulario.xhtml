@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      lang="pt-br">
+  <h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Atividade 2 - Formulário Contato</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"  />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+  </h:head>
+  <h:body>
+    <main>
+      <section id="form_container">
+        <header id="form_header">
+          <h1 id="form_title">Contato</h1>
+        </header>
+        <h:form id="form">
+          <div id="input_container">
+            <!-- Nome -->
+            <div class="input-box">
+              <label for="nome" class="form-label">Primeiro nome</label>
+              <div class="input-field">
+                <h:inputText id="nome"  required="true" styleClass="form-control"
+                  placeholder="Digite seu nome" />
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <h:message for="nome" styleClass="error" />
+            </div>
+            <!-- Sobrenome -->
+            <div class="input-box">
+              <label for="sobrenome" class="form-label">Último nome</label>
+              <div class="input-field">
+                <h:inputText id="sobrenome"  required="true" styleClass="form-control"
+                  placeholder="Digite seu sobrenome" />
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <h:message for="sobrenome" styleClass="error" />
+            </div>
+            <!-- Fone -->
+            <div class="input-box">
+              <label for="fone" class="form-label">Fone</label>
+              <div class="input-field">
+                <h:inputText id="fone"  required="true" styleClass="form-control"
+                  placeholder="(99) 99999-9999" />
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h:message for="fone" styleClass="error" />
+            </div>
+            <!-- Email -->
+            <div class="input-box">
+              <label for="email" class="form-label">Email</label>
+              <div class="input-field">
+                <h:inputText id="email"  required="true" styleClass="form-control"
+                  placeholder="exemplo@email.com" />
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <h:message for="email" styleClass="error" />
+            </div>
+          </div>
+          <h:commandButton value="Enviar"  styleClass="btn-default" />
+        </h:form>
+      </section>
+    </main>
+  </h:body>
+</html>

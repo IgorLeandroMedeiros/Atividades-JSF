@@ -1,0 +1,199 @@
+/* Estilos gerais da página */
+body {
+  font-family: sans-serif;
+  background-color: #6366f1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #f6f8ff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Estilos do container do formulário */
+#form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do cabeçalho do formulário */
+#form_header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#form_title {
+  font-weight: 500;
+  color: #272727;
+  position: relative;
+}
+
+#form_title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: #6366f1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+/* Estilos do formulário */
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+}
+
+/* Estilos do container dos inputs */
+#input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: #404044;
+  font-weight: 500;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+}
+
+.input-field i {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #404044;
+}
+
+.form-control {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.input-box .input-field:focus-within {
+  outline: 2px solid #6366f1;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  color: #000;
+}
+
+/* Estilos do botão */
+.btn-default {
+  background-color: #6366f1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  gap: 0.5rem;
+  height: fit-content;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-default:hover {
+  background-color: #818cf8;
+}
+
+/* Estilos da seção de nomes cadastrados */
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilos da tabela de nomes */
+.nomes-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.nomes-tabela th,
+.nomes-tabela td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.nomes-tabela th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#listaNomes > p {
+  color: #777;
+  font-style: italic;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #form_container {
+    padding: 32px;
+    gap: 38px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #input_container {
+    gap: 38px;
+  }
+}
