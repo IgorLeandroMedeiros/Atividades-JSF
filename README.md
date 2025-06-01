@@ -29,19 +29,19 @@ Abaixo, um resumo de cada atividade presente neste portfólio:
 * **Objetivo:** Desenvolver uma página web estática para apresentar um currículo profissional, utilizando HTML para estruturação semântica e CSS para estilização visual.
 * **Principais Tecnologias:** HTML5, CSS3 (com variáveis, Grid Layout), Font Awesome.
 * **Resultado:** Uma página de currículo online de duas colunas, organizada, com seções como dados pessoais, formação, experiências, habilidades (com barras de progresso) e projetos.
-* **➡️ Código:** `[Ver Atividade 1](./Atividade1/)`
+* **➡️ Código:** [Ver Atividade 1](./Atividade1/)
 
 ### 🖥️ Atividade 2: Formulário com JSF
 * **Objetivo:** Implementar um formulário web interativo para coleta de dados de contato (nome, sobrenome, telefone e e-mail) utilizando o framework JavaServer Faces (JSF).
 * **Principais Tecnologias:** JSF 2.3, XHTML, CSS3, Font Awesome.
 * **Resultado:** Um formulário de contato funcional com campos validados como obrigatórios, estilização CSS e ícones para melhor experiência do usuário.
-* **➡️ Código:** `[Ver Atividade 2](./Atividade2/)`
+* **➡️ Código:** [Ver Atividade 2](./Atividade2/)
 
 ### 🧑‍💻 Atividade 3: Cadastro de Usuários com Bean e ArrayList
 * **Objetivo:** Desenvolver uma aplicação web que permita o cadastro de nomes de usuários, armazenando-os em um `ArrayList` gerenciado por um Bean CDI (`@Named`, `@SessionScoped`) e exibindo a lista dinamicamente com JSF e AJAX.
 * **Principais Tecnologias:** JSF 2.3 (com `<f:ajax>`, `<h:dataTable>`), XHTML, Java, CDI Beans (`@Named`, `@SessionScoped`), `ArrayList`.
 * **Resultado:** Uma aplicação interativa que permite adicionar nomes a uma lista e limpar a lista, com atualizações da interface via AJAX, demonstrando o gerenciamento de estado na sessão.
-* **➡️ Código:** `[Ver Atividade 3](./CadastroUsuarios/)` (Confirme se "CadastroUsuarios" é o nome da pasta no GitHub)
+* **➡️ Código:** [Ver Atividade 3](./CadastroUsuarios/) 
 
 ### 🛠️ Atividade 4: Versionamento de Código com GitHub
 * **Objetivo:** Aplicar o processo de versionamento de código utilizando Git e GitHub, incluindo a integração do Eclipse IDE para clonar, realizar `commits` e `push` das atividades anteriores.
@@ -72,7 +72,7 @@ Ao longo destas atividades, as principais tecnologias e ferramentas que utilizei
     * Eclipse IDE for Enterprise Java and Web Developers (ou similar).
 2.  **Passos:**
     * Clone este repositório: `git clone https://github.com/IgorLeandroMedeiros/Atividades-JSF.git`
-    * Importe os projetos `Atividade2` e `CadastroUsuarios` (ou o nome correto da pasta da Atividade 3) no seu Eclipse IDE.
+    * Importe os projetos `Atividade2` e `CadastroUsuarios`  no seu Eclipse IDE.
     * Configure o servidor WildFly (ou similar) no Eclipse.
     * Adicione os projetos ao servidor.
     * Inicie o servidor e acesse as respectivas URLs (ex: `http://localhost:8080/NomeDoProjeto/`).
